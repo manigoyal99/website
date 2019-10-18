@@ -1,0 +1,93 @@
+<html>
+<title> book basket </title> 
+<link rel = "icon" href ="logo.png"type = "image"> 
+<style>
+body	 
+	{
+		background-image: url("login.jpg");
+	}
+.demo
+{
+font-family:"mistral"; 
+font-size:50px; 
+color:white;
+text-align:center;
+
+}
+.demo1
+	{
+		font-size:40px; 
+		color:white;
+	}
+input[type=text],select
+	{
+  		width: 100%;
+  		padding: 12px 20px;
+  		margin: 8px 0;
+  		display: inline-block;
+  		border: 1px solid black;
+  		border-radius: 4px;
+  		box-sizing: border-box;
+	}
+
+input[type=submit] 
+	{
+  		width: 100%;
+  		background-color: goldenrod;
+  		color: white;
+  		padding: 14px 20px;
+  		margin: 8px 0;
+  		border: none;
+  		border-radius: 4px;
+  		cursor: pointer;
+	}
+
+input[type=submit]:hover 
+	{
+  		background-color: dimgrey;
+	}
+
+div 
+	{
+  		border-radius: 5px;
+  		background-color:silver;
+  		padding: 20px;
+	}
+h2
+	{
+		color:white;
+	}
+</style>
+<body>
+<p class="demo">BoOk BaSkEt</p>
+<p class="demo1">Welcome to BoOk BaSkEt<P>
+<h2>Create Account:</h2>
+
+<div>
+  <form  onsubmit="func()">
+    <label>Full Name</label>
+      <input type="text" placeholder="Name"><br>
+     <label>Nationality</label>
+     <select id="country" name="country">
+     <option value="India">India</option>
+     <option value="canada">Canada</option>
+     <option value="usa">USA</option>
+     <option value="Australia">Australia</option>
+     </select>
+      <label>Phone number</label>
+      <input type="text" placeholder="Phone number">
+      <label>Email</label>
+      <input type="text" placeholder="Email(optional)">
+      <label>Password (must be atleast 6 characters)</label>
+       <input type="text" placeholder="password" name="search" minlength="6">
+       <input type="submit" value="Submit">
+  </form>
+</div>
+<script>
+function func()
+{
+alert("Your book is added to cart");
+}
+</script>
+</body>
+</html>

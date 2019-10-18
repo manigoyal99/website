@@ -1,0 +1,303 @@
+<html>
+
+
+<head>
+
+<title> book basket </title> 
+<link rel = "icon" href ="logo.png"type = "image"> 
+<style>
+
+body
+ 	{
+
+          	background-image: url("wood.jpg");
+		background-size: 1368px 668px;
+
+          	background-color: #e3e2df;
+
+          	color: white;
+
+         	margin: 0;
+    	}
+
+.row	{
+
+          	float: right;
+
+   	  	margin-top: 30px;
+  	  	list-style: none;
+
+    	}
+
+.row li	
+	{
+    	  	display: inline-block;
+	}
+
+.row li a
+	{
+    	  	color: black;
+    	  	text-decoration: none;
+    	  	padding: 5px 20px;
+    	  	font-family:"Roboto";
+    	  	font-size: 18px;
+	}
+
+.row li.active a
+	{
+   	  	border: 1px solid white;
+	}
+	
+.row li a:hover
+	{
+   	  	border: 1px solid white; 
+	}
+
+.logo p	{
+	  	float: left;
+	  	color: #501B1D;
+	  	margin-left:70px;
+	  	font-size: 50px;
+	  	font-family: Comic Sans MS;
+	}
+
+.navbar
+	{
+	  	max-width: 1200px;
+	  	margin: auto;
+
+	}
+.wrap	{
+		display:inline-block;
+		border:1px solid red;
+	  	width:75%;
+		margin-left:12.5%;
+	  	
+	}
+
+.card 	{
+  	  	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  	  	width: 200px;
+   	  	text-align:center;
+  	  	font-size:16px;
+  	  	font-family:sans-serif;
+   	  	float:left;
+  	  	color: black;
+  	  	margin:25px;
+  	  	display:inline-block;
+		transform-style: preserve-3d;
+                transition: all 1.5s ease;
+		border-radius: 20px;
+		background-color:white;
+	}
+
+.card:hover 
+	{
+  	  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		transform: rotateY(180deg);
+		
+	}
+.theback{
+		poisition: absolute;
+		width: 200px;
+		height:400px;
+		backface-visibility: hidden;
+		transform: rotateY(180deg);
+	}
+.thefront{
+		position: absolute;
+ 		width: 200px;
+		height:400px;
+		backface-visibility: hidden;
+	}
+.container 
+	{
+  	 	padding: 2px 16px;
+	}
+</style>
+<body>
+
+<div class="navbar">
+
+	<div class="logo">
+		<a href="home.html"><p id="demo"><b>New Arrivals</b></p></a>
+	</div>
+	<ul class="row"
+> 
+		<li>
+<a href="home.html"><img src="home.png" alt="Home" height="50" width="50"></a></li>
+		<li>
+<a href="new arrivals.html">
+
+<b>New Arrivals</b></a></li>
+		<li>
+<a href="bestseller.html">
+
+<b>Best-Sellers</b></a></li>
+		<li>
+<a href="awardwinners.html">
+
+<b>Award Winners</b></a></li>
+		</ul>
+</div>
+
+
+
+
+
+<div class="wrap">
+        <div class="card" onclick="func()">
+		<div class="thefront">
+			<img src="1.jpg" style="width:100%">
+  			<div class="container">
+                    		<h4>RED RISING</h4> 
+    				<p>By  Pierce Brown<br><b>Price :Rs.579</b></p> 
+  			</div>	
+		</div>
+        <div class="theback">
+                        <div class="container">
+    				<h4>RED RISING</h4> 
+    				<p>Red Rising is a 2014 science fiction novel by American author Pierce Brown, 
+					and the first book and eponym of a series. The novel, set on a future planet Mars, 
+					follows lowborn miner Darrow as he infiltrates the ranks of the elite Golds.
+				</p> 
+       			</div>
+                
+        	</div>
+       </div>
+	<div class="card" onclick="func()">
+  		<div class="thefront">
+			<img src="2.jpg" style="width:100%">
+  			<div class="container">
+    				<h4><b>BECOMING</b></h4> 
+    				<p>By Michelle Obama<br><b>Price :Rs.297</b></p> 
+  			</div>
+		</div>
+	<div class="theback">
+                        <div class="container">
+    				<h4>BECOMING</h4> 
+    				<p> Warm, wise, and revelatory, Becoming is the deeply personal reckoning 
+					of a woman of soul and substance who has steadily defied expectations—and
+					 whose story inspires us to do the same.	
+				</p> 
+       			</div>
+       		</div>
+       	</div>
+	<div class="card" onclick="func()">
+  		<div class="thefront">
+			<img src="3.jpg" style="width:100%">
+  			<div class="container">
+    				<h4><b>CITY OF ASHES</b></h4> 
+    				<p>By Cassandra Clare<br><b>Price :Rs.299</b></p> 
+ 			</div>
+		</div>
+	<div class="theback">
+                        <div class="container">
+    				<h4>CITY OF ASHES</h4> 
+    				<p>Is love worth betraying everything? Plunge into the second adventure 
+					in the internationally bestselling Mortal Instruments series and “prepare to
+				 be hooked” (Entertainment Weekly)—now with a gorgeous new cover, a map, a new foreword,
+					 and exclusive bonus content! City of Ashes is a Shadowhunters novel.
+				</p> 
+       			</div>
+       		</div>
+       	</div>
+	<div class="card" onclick="func()">
+  		<div class="thefront">
+			<img src="4.jpg" style="width:100%">
+  			<div class="container">
+    				<h4><b>PARTIALS</b></h4>
+                        	<p>By Dan wells<br><b>Price :Rs.686</b></p> 
+  			</div>
+		</div>
+	<div class="theback">
+                        <div class="container">
+    				<h4>PARTIALS</h4> 
+    				<p>Partials is the first book in the Partials Sequence series by Dan Wells.
+ 				It follows sixteen year old Kira Walker as she lives and adventures through 
+				a world rampaged and destroyed by a deadly virus called RM.
+				</p> 
+       			</div>
+       		</div>
+       	</div>
+	<div class="card" onclick="func()">
+		<div class="thefront">  		
+			<img src="5.jpg" style="width:100%">
+  			<div class="container">
+    				<h4><b>CHAMPION</b></h4> 
+    				<p>By Marie Lu<br><b>Price :Rs.320</b></p> 
+  			</div>
+		</div>
+	<div class="theback">
+                	<div class="container">
+    				<h4>CHAMPION</h4> 
+    				<p>Champion is a dystopian young adult novel and the third and final book
+					 in the Legend trilogy written by American novelist Marie Lu.
+						It was released on 5 November 2013.
+				</p> 
+       			</div>
+       		</div>
+       	</div>
+	<div class="card" onclick="func()">
+  		<div class="thefront">
+			<img src="6.jpg" style="width:100%">
+  			<div class="container">
+    				<h4><b>STRANGER THINGS</b></h4> 
+    				<p>By Gwenda bond<br><b>Price :Rs.432</b></p>
+  			</div>
+		</div>	
+	<div class="theback">
+                        <div class="container">
+    				<h4>STRANGER THINGS</h4> 
+    				<p>A mysterious lab. A sinister scientist. A secret history. 
+					If you think you know the truth behind Eleven’s mother, prepare to 
+						have your mind turned Upside Down in this thrilling 
+						prequel to the hit show Stranger Things.
+								</p> 
+       			</div>
+       		</div>
+       	</div>
+	<div class="card" onclick="func()">
+  			<div class="thefront">
+			<img src="7.jpg" style="width:100%">
+  			<div class="container">
+    				<h4><b>A SUDDEN DEATH IN CYPRUS</b></h4> 
+    				<p>By Michael grant<br><b>Price :Rs.450</b></p>
+  			</div>
+		</div>
+	<div class="theback">
+                        <div class="container">
+    				<h4><B>A SUDDEN DEATH IN CYRUS</B></h4> 
+    				<p>Fugitive crime writer David Mitre is caught up in a deadly conspiracy when he's 
+					witness to a brutal murder on the stunning island of Cyprus.
+					</p>
+       			</div>
+       		</div>
+       	</div>
+	<div class="card" onclick="func()">
+  		<div class="thefront">
+			<img src="8.jpg" style="width:100%">
+  			<div class="container">
+    				<h4><b>A BAD DEAL FOR THE WHOLE GALAXY </b></h4> 
+    				<p>By Alex White<br><b>Price :Rs.399</b></p>
+  			</div>
+		</div>
+	<div class="theback">
+                        <div class="container">
+    				<h4><b>A BAD DEAL FOR THE WHOLE GALAXY</b></h4> 
+    				<p>The greatest dangers hide the brightest treasures in this bold, 
+					planet-hopping science fiction adventure series.</p> 
+       			</div>
+       		</div>
+       	</div>
+</div>
+
+<script>
+function func()
+{
+window.open("login.html");
+}
+</script>
+</body>
+</head>
+<html>

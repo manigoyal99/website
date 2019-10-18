@@ -1,0 +1,299 @@
+<html>
+
+
+<head>
+
+
+<title> book basket </title> 
+<link rel = "icon" href ="logo.png"type = "image"> 
+<style>
+
+body
+ 	{
+
+                background-image: url("white.jpg");
+		background-size: 1368px 668px;
+
+          	background-color: #bfd8d2;
+
+             	margin: 0;
+    	}
+
+.row	{
+
+          	float: right;
+
+   	  	margin-top: 30px;
+  	  	list-style: none;
+
+    	}
+
+.row li	
+	{
+    	  	display: inline-block;
+	}
+
+.row li a
+	{
+    	  	color: black;
+    	  	text-decoration: none;
+    	  	padding: 5px 20px;
+    	  	font-family:"Roboto";
+    	  	font-size: 18px;
+	}
+
+.row li.active a
+	{
+   	  	background-color: 1px solid black;
+	}
+	
+.row li a:hover
+	{
+   	  	border: 1px solid black; 
+	}
+
+.logo p	{
+	  	float: left;
+	  	color: black;
+	  	margin-left:70px;
+	  	font-size: 50px;
+	  	font-family: Comic Sans MS;
+	}
+
+.navbar
+	{
+	  	max-width: 1200px;
+	  	margin: auto;
+
+	}
+.wrap	{
+		display:inline-block;
+		border:1px solid black;
+	  	width:75%;
+		margin-left:12.5%; 	
+	}
+
+.card 	{
+  	  	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  	  	width: 200px;
+   	  	text-align:center;
+  	  	font-size:16px;
+  	  	font-family:sans-serif;
+   	  	float: left;
+  	  	color: black;
+		background-color:white;
+  	  	margin:25px;
+  	  	display:inline-block;
+		transform-style: preserve-3d;
+                transition: all 1.5s ease;
+		border-radius: 20px;
+	}
+
+.card:hover 
+	{
+  	  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		transform: rotateY(180deg);
+		
+	}
+.theback{
+		poisition: absolute;
+		width: 200px;
+		height:400px;
+		backface-visibility: hidden;
+		transform: rotateY(180deg);
+	}
+.thefront{
+		position: absolute;
+ 		width: 200px;
+		height:400px;
+		backface-visibility: hidden;
+	}
+.container 
+	{
+  	 	padding: 2px 16px;
+	}
+</style>
+<body>
+
+<div class="navbar">
+
+	<div class="logo">
+		<a href="home.html"><p id="demo"><b>Best-Sellers</b></p></a>
+	</div>
+	<ul class="row"
+> 
+		<li>
+<a href="home.html"><img src="home.png" alt="Home" height="50" width="50"></a></li>
+		<li>
+<a href="new arrivals.html"><b>New Arrivals</b></a></li>
+		<li>
+<a href="bestseller.html">
+
+<b>Best-Sellers</b></a></li>
+		<li>
+<a href="awardwinners.html">
+
+<b>Award Winners</b></a></li>
+		</ul>
+</div>
+
+
+
+
+
+<div class="wrap">
+        <div class="card" onclick="func()">
+		<div class="thefront">
+			<img src="b1.jpg" style="width:100%">
+  			<div class="container">
+                    		<h4>TO KILL THE PRESIDENT</h4> 
+    				<p>By Sam Bourne<br><b>Price :Rs.579</b></p> 
+  			</div>	
+		</div>
+        <div class="theback">
+                        <div class="container">
+    				<h4>TO KILL THE PRESIDENT </h4> 
+    				<p>Maggie Costello uncovers an assassination plot to kill the tyrannical new president.
+					A blockbuster thriller from No.1 Sunday Times bestselling author Sam Bourne.
+				</p> 
+       			</div>
+                
+        	</div>
+       </div>
+	<div class="card" onclick="func()">
+  		<div class="thefront">
+			<img src="b2.jpg" style="width:100%">
+  			<div class="container">
+    				<h4><b>THE DIARY OF A YOUNG GIRL</b></h4> 
+    				<p>By Anne Frank<br><b>Price :Rs.297</b></p> 
+  			</div>
+		</div>
+	<div class="theback">
+                        <div class="container">
+    				<h4>THE DIARY OF A YOUNG GIRL</h4> 
+    				<p> The Diary of a Young Girl, also known as The Diary of Anne Frank, 
+					is a book of the writings from the Dutch language diary kept by Anne Frank 
+					while she was in hiding for two years with her family during the Nazi occupation of the Netherlands.	
+				</p> 
+       			</div>
+       		</div>
+       	</div>
+	<div class="card" onclick="func()">
+  		<div class="thefront">
+			<img src="b3.jpg" style="width:100%">
+  			<div class="container">
+    				<h4><b>THE BACHELOR OF ARTS</b></h4> 
+    				<p>By R. K. Narayan<br><b>Price :Rs.299</b></p> 
+ 			</div>
+		</div>
+	<div class="theback">
+                        <div class="container">
+    				<h4>THE BACHELOR OF ARTS</h4> 
+    				<p>The Bachelor of Arts (1937) is a novel written by R. K. Narayan. 
+					It is the second book of a trilogy that begins with Swami and Friends and ends with The English Teacher. 
+					It is again set in Malgudi, the fictional town Narayan invented for his novels.
+				</p> 
+       			</div>
+       		</div>
+       	</div>
+	<div class="card" onclick="func()">
+  		<div class="thefront">
+			<img src="b4.jpg" style="width:100%">
+  			<div class="container">
+    				<h4><b>INTERPRETER OF MALADIES</b></h4>
+                        	<p>By Jhumpa Lahiri<br><b>Price :Rs.686</b></p> 
+  			</div>
+		</div>
+	<div class="theback">
+                        <div class="container">
+    				<h4>INTERPRETER OF MALADIES</h4> 
+    				<p>Interpreter of Maladies is a book collection of nine short stories by American author of Indian Origin 
+					Jhumpa Lahiri published in 1999.The stories are about the lives of Indians and Indian Americans 
+					who are caught between their roots and the "New World."
+				</p> 
+       			</div>
+       		</div>
+       	</div>
+	<div class="card" onclick="func()">
+		<div class="thefront">  		
+			<img src="b5.jpg" style="width:100%">
+  			<div class="container">
+    				<h4><b>THE NAMESAKE</b></h4> 
+    				<p>By Jhumpa Lahiri<br><b>Price :Rs.320</b></p> 
+  			</div>
+		</div>
+	<div class="theback">
+                	<div class="container">
+    				<h4>THE NAMESAKE</h4> 
+    				<p>In The Namesake, the Pulitzer Prize winner Jhumpa Lahiri brilliantly illuminates 
+					the immigrant experience and the tangled ties between generations.
+				</p> 
+       			</div>
+       		</div>
+       	</div>
+	<div class="card" onclick="func()">
+  		<div class="thefront">
+			<img src="b6.jpg" style="width:100%">
+  			<div class="container">
+    				<h4><b>THE INHERITANCE OF LOSS</b></h4> 
+    				<p>By Kiran Desai<br><b>Price :Rs.432</b></p>
+  			</div>
+		</div>	
+	<div class="theback">
+                        <div class="container">
+    				<h4>THE INHERTENCE OF LOSS</h4> 
+    				<p>It was written over a period of seven years after her first book, 
+					the critically acclaimed Hullabaloo in the Guava Orchard.
+					Among its main themes are migration,living between two 
+					worlds, and between past and present.
+				</p> 
+       			</div>
+       		</div>
+       	</div>
+	<div class="card" onclick="func()">
+  			<div class="thefront">
+			<img src="b7.jpg" style="width:100%">
+  			<div class="container">
+    				<h4><b>THE PALACE OF ILLUSIONS</b></h4> 
+    				<p>By Chitra Banerjee Divakaruni<br><b>Price :Rs.450</b></p>
+  			</div>
+		</div>
+	<div class="theback">
+                        <div class="container">
+    				<h4><B>THE PALACE OF ILLUSIONS</B></h4> 
+    				<p>Taking us back to a time that is half history, half myth and wholly magical,
+					 bestselling author Chitra Banerjee Divakaruni gives voice to Panchaali, 
+					the fire-born heroine of the Mahabharata, 
+					as she weaves a vibrant retelling of an ancient epic saga.
+				</p>
+       			</div>
+       		</div>
+       	</div>
+	<div class="card" onclick="func()">
+  		<div class="thefront">
+			<img src="b8.jpg" style="width:100%">
+  			<div class="container">
+    				<h4><b>THE ROOM ON THE ROOF</b></h4> 
+    				<p>By Ruskin Bond<br><b>Price :Rs.399</b></p>
+  			</div>
+		</div>
+	<div class="theback">
+                        <div class="container">
+    				<h4><b>THE ROOM ON THE ROOF</b></h4> 
+    				<p>The novel revolves around Rusty, an orphaned seventeen-year-old Anglo-Indian boy living in Dehradun. Due to his guardian, 
+					Mr. Harrison's strict ways, he runs away from his home to live with his Indian friends.
+				</p> 
+       			</div>
+       		</div>
+       	</div>
+</div>
+
+<script>
+function func()
+{
+window.open("login.html");
+}
+</script>
+</body>
+</head>
+<html>
